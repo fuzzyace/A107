@@ -21,3 +21,11 @@ Enter your income: 125000
 Your federal income tax is: 24411.7
 
 '''
+income = float(input("Enter your income: "))
+
+tax1 = 49020 * 0.15
+tax2 = (98040 - 49020) * 0.205
+tax3 = (income - 98040) * 0.26
+
+total = tax1 + tax2 + tax3
+print("Your federal income tax is:", total)
